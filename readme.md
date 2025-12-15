@@ -15,8 +15,10 @@ To use Vroom in your Godot web exports, use a custom shell file and include Vroo
 
 Vroom unfortunately causes a bug where the game appears squashed, but this can be mitigated.
 Do the following to fix the issue:
-	-set "canvas resize policy" (html/canvas_resize_policy) in the web export settings to "None"
-	-set VROOM_ASPECT_RATIO to the aspect ratio of your choosing (width divided by height.)
+
+- set "canvas resize policy" (html/canvas_resize_policy) in the web export settings to "None"
+- set VROOM_ASPECT_RATIO to the aspect ratio of your choosing (width divided by height.)
+
 Vroom will then resize and reposition the canvas so that it will display correctly no matter what size the screen is.
 
 Set VROOM_ASPECT_RATIO to -1.0 to make Vroom not resize and reposition the canvas.
