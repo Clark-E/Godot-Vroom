@@ -166,14 +166,6 @@ if(ENABLE_VROOM){
 				case 34016:
 					//ACTIVE_TEXTURE
 					return(cachedActiveTexture);
-				
-				//fallthrough cases
-				/*case 36006:
-					//DRAW_FRAMEBUFFER_BINDING
-				case 34964:
-					//ARRAY_BUFFER_BINDING
-				case 34229:
-					//VERTEX_ARRAY_BINDING*/
 				default:
 					return(baseGetParameter.call(ctx,param));	
 			}
@@ -195,7 +187,7 @@ if(ENABLE_VROOM){
 			
 		}
 		
-		if(VROOM_ASPECT_RATIO){
+		if(VROOM_ASPECT_RATIO != -1.0){
 			
 			canvasElement.style.position = "relative";
 			canvasElement.style.display = "block";
