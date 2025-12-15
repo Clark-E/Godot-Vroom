@@ -191,8 +191,8 @@ if(ENABLE_VROOM){
 			
 			canvasElement.style.position = "relative";
 			canvasElement.style.display = "block";
-			canvasElement.style.top = "50%";
-			canvasElement.style.left = "50%";
+			canvasElement.style.top = "50vh";
+			canvasElement.style.left = "50vw";
 			canvasElement.style.transform = " translate(-50%, -50%)";
 			
 			function setCanvasSize(event){
